@@ -3,26 +3,27 @@
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 
-Name:           BlockOutII
-Version:        2.4
-Release:        %mkrel 1
-Summary:        A free adaptation of the original BlockOut DOS game
-Group:          Games/Arcade
-License:        GPLv2+
-URL:            htt://www.blockout.net/blockout2/
-Source0:        http://downloads.sourceforge.net/project/blockout/blockout/BlockOut%202.4/bl24-src-linux-i586.tar.gz
-Source1:        %{name}.desktop
-Source2:        %{name}.png
+Name:		BlockOutII
+Version:	2.4
+Release:	%mkrel 1
+Summary:	A free adaptation of the original BlockOut DOS game
+Group:		Games/Arcade
+License:	GPLv2+
+URL:		http://www.blockout.net/blockout2
+Source0:	http://downloads.sourceforge.net/project/blockout/blockout/BlockOut%202.4/bl24-src-linux-i586.tar.gz
+Source1:	%{name}.desktop
+Source2:	%{name}.png
 Source3:	music.ogg
 Source4:	%{name}-readme.txt
-Patch0:         BlockOutII-2.3-syslibs.patch
-Patch1:         BlockOutII-2.3-bl2Home.patch
-Patch2:         BlockOutII-2.3-music.patch
+Patch0:		BlockOutII-2.3-syslibs.patch
+Patch1:		BlockOutII-2.3-bl2Home.patch
+Patch2:		BlockOutII-2.3-music.patch
 Patch3:		BlockOutII-jpegdecoder.patch
 Patch4:		BlockOutII-strings.patch
-BuildRequires:  SDL_mixer-devel
-BuildRequires:  libpng-devel 
-BuildRequires:  desktop-file-utils
+BuildRoot:	%{_tmppath}/%{name}-%{version}
+BuildRequires:	SDL_mixer-devel
+BuildRequires:	libpng-devel 
+BuildRequires:	desktop-file-utils
 
 %description
 BlockOut II is a free adaptation of the original BlockOut
