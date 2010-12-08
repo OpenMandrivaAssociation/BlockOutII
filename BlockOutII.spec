@@ -5,7 +5,7 @@
 
 Name:		BlockOutII
 Version:	2.4
-Release:	%mkrel 1
+Release:	%mkrel 2
 Summary:	A free adaptation of the original BlockOut DOS game
 Group:		Games/Arcade
 License:	GPLv2+
