@@ -1,0 +1,12 @@
+diff -up BlockOutII-2.3/BlockOut_GL/SoundManager.cpp~ BlockOutII-2.3/BlockOut_GL/SoundManager.cpp
+--- BlockOutII-2.3/BlockOut_GL/SoundManager.cpp~	2007-11-25 23:13:00.000000000 +0100
++++ BlockOutII-2.3/BlockOut_GL/SoundManager.cpp	2007-11-25 23:13:00.000000000 +0100
+@@ -142,7 +142,7 @@ void SoundManager::PlayHit() {
+ void SoundManager::PlayMusic() {
+ 
+   if( creditsMusic==NULL ) {
+-    creditsMusic = Mix_LoadMUS( LID("sounds/music.mp3") );
++    creditsMusic = Mix_LoadMUS( LID("sounds/music.ogg") );
+     if( !creditsMusic ) {
+       printf("Music cannot be played: %s\n",SDL_GetError());
+       return;

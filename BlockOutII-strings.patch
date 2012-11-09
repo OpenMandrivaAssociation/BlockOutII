@@ -1,0 +1,11 @@
+--- BlockOutII/BlockOut_GL/PageHallOfFameOnLine.cpp	2007-08-03 01:44:09.000000000 +1200
++++ BlockOutII/BlockOut_GL/PageHallOfFameOnLine.cpp	2009-09-11 23:15:19.725064052 +1200
+@@ -60,7 +60,7 @@
+   if( page==NULL ) {
+ 
+     downloadState = -1;
+-    sprintf(errMsg,mParent->GetHttp()->GetError());
++    sprintf(errMsg,mParent->GetHttp()->GetError(),"%s - %s");
+ 
+   } else {
+ 

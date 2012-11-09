@@ -1,0 +1,18 @@
+diff -up BlockOutII-2.3/BlockOut_GL/Utils.cpp~ BlockOutII-2.3/BlockOut_GL/Utils.cpp
+--- BlockOutII-2.3/BlockOut_GL/Utils.cpp~	2007-11-25 23:01:12.000000000 +0100
++++ BlockOutII-2.3/BlockOut_GL/Utils.cpp	2007-11-25 23:01:12.000000000 +0100
+@@ -162,13 +162,7 @@ BOOL CheckEnv() {
+ 		return FALSE;
+ 	}
+ 		
+-	char *blockoutHome = getenv("BL2_HOME");
+-	if( blockoutHome==NULL ) {
+-	  printf("BL2_HOME environement variable if not defined !\n");
+-	  printf("Please set the BL2_HOME to the BlockOut II installation directory (ex: BL2_HOME=/usr/local/bl2).\n");
+-		return FALSE;
+-	}
+-	strcpy( bl2Home , blockoutHome );
++	strcpy( bl2Home , "/usr/share/games/BlockOutII" );
+ 		
+ 	char bl2Dir[512];
+ 	sprintf(bl2Dir,"%s/.bl2",homePath);
