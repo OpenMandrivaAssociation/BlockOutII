@@ -9,7 +9,7 @@ Release:	%mkrel 2
 Summary:	A free adaptation of the original BlockOut DOS game
 Group:		Games/Arcade
 License:	GPLv2+
-URL:		http://www.blockout.net/blockout2
+URL:		https://www.blockout.net/blockout2
 Source0:	http://downloads.sourceforge.net/project/blockout/blockout/BlockOut%202.4/bl24-src-linux-i586.tar.gz
 Source1:	%{name}.desktop
 Source2:	%{name}.png
