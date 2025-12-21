@@ -21,6 +21,7 @@ Patch2:		BlockOutII-2.3-music.patch
 Patch3:		BlockOutII-jpegdecoder.patch
 Patch4:		BlockOutII-strings.patch
 BuildRoot:	%{_tmppath}/%{name}-%{version}
+BuildRequires:	make
 BuildRequires:	SDL_mixer-devel
 BuildRequires:	libpng-devel 
 BuildRequires:	desktop-file-utils
